@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactSVG from 'react-svg'
 
 // Svgs
 import openBracketIcon from '../assets/icons/openBracket.svg'
@@ -32,19 +33,19 @@ export default class NavBar extends React.Component {
           this.toggleState()
         }
       }>
-        <img className='bracketIcon' src={openBracketIcon} alt="open bracket"/>
-        <img className='pointIcon' onMouseEnter={this.toggleClass} onMouseLeave={this.toggleClass} src={pointIcon} alt="point-icon"/>
-        <img className='pointIcon' onMouseEnter={this.toggleClass} onMouseLeave={this.toggleClass} src={pointIcon} alt="point-icon"/>
-        <img className='pointIcon' onMouseEnter={this.toggleClass} onMouseLeave={this.toggleClass} src={pointIcon} alt="point-icon"/>
-        <img className='bracketIcon' src={closeBracketIcon} alt="close bracket"/>
+        <ReactSVG className='bracket-open' src={openBracketIcon} />
+        <ReactSVG className='point-1' src={pointIcon} />
+        <ReactSVG className='point-2' src={pointIcon} />
+        <ReactSVG className='point-3' src={pointIcon} />
+        <ReactSVG className='bracket-close' src={closeBracketIcon} />
       </div>
     )
 
     let menuArray = (
       <div className="menuIcon flex-center" onClick={e => this.toggleState()}>
-        <img onClick={e => this.toggleState()} className='bracketIcon' src={openBracketIcon} alt="open bracket"/>
-        Services
-        <img onClick={e => this.toggleState()} className='bracketIcon' src={closeBracketIcon} alt="close bracket"/>
+        <ReactSVG className='bracket-open' src={openBracketIcon} />
+          Services
+        <ReactSVG className='bracket-close' src={closeBracketIcon} />
       </div>
     )
 
