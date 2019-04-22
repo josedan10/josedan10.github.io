@@ -47,7 +47,6 @@ export default class NavBar extends React.Component {
                 activeClass='active'
                 spy
                 smooth
-                offset={-70}
                 duration={500}
                 key={title + index} className='nav-link flex-center' to={title}>
                 {(index !== sections.length - 1) ? title + ',' : title }

@@ -28,7 +28,6 @@ header {
   z-index: 20;
 
   nav {
-
     position: absolute;
     right: 0;
     padding: 2rem 4rem;
@@ -42,7 +41,7 @@ header {
       display: block;
       margin: 5px;
       text-decoration: none;
-      font: 1rem CamingoCode-Bold;
+      font: 1.25rem CamingoCode-Bold;
       transition: all .5s ease;
     }
 
@@ -96,7 +95,7 @@ header {
 
       .menuArray {
         opacity: 1;
-        width: 430px;
+        width: 500px;
         transition: all 1.5s ease;
         overflow: hidden;
       }

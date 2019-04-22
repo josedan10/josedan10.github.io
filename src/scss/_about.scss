@@ -1,0 +1,7 @@
+#About_Me {
+  .content {
+    & > * {
+      width: 40%;
+    }
+  }
+}
