@@ -3,13 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "animate.css": "^3.7.0",
     "history": "^4.9.0",
     "node-sass": "^4.11.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-particles-js": "^2.6.0",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "react-svg": "^9.0.1",
+    "react-typist": "^2.0.5",
+    "react-typist-loop": "0.0.5"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,7 +1,6 @@
-@import "colors";
+@import "variables";
+@import "~animate.css/animate.css";
 @import url('https://fonts.googleapis.com/css?family=Acme');
-$font_path: '../assets/fonts/';
-$img_path: '../assets/images/';
 
 // Fonts
 
@@ -33,10 +32,21 @@ main {
 
 h1 {
   font-family: 'Acme', sans-serif;
-  font-size: 4rem;
+  font-size: 3.25rem;
+  text-align: center;
 }
 
 h2 {
   font-family: 'Acme', sans-serif;
   font-size: 3rem;
 }
+
+.text-code {
+  font-family: CamingoCode-Reg;
+}
+
+@import "animations";
+@import "containers";
+@import "home";
+@import "Typist";
+@import "components";
