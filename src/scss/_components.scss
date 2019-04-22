@@ -42,7 +42,7 @@ header {
       display: block;
       margin: 5px;
       text-decoration: none;
-      width: 0;
+      font: 1rem CamingoCode-Bold;
       transition: all .5s ease;
     }
 
@@ -87,11 +87,6 @@ header {
     }
 
     &.open {
-      .nav-link {
-        width: 60px;
-        transition: all .5s ease;
-        text-align: center;
-      }
 
       .menuIcon {
         opacity: 0;
@@ -101,28 +96,29 @@ header {
 
       .menuArray {
         opacity: 1;
-        width: auto;
+        width: 430px;
         transition: all 1.5s ease;
+        overflow: hidden;
       }
     }
 
     &.closed {
       .nav-link {
-        width: 0;
         margin: 0;
         transition: all 1s ease;
       }
 
       .menuArray {
+        width: 0;
         opacity: 0;
-        transition: all 1s ease;
+        transition: all .8s ease;
         overflow: hidden;
       }
 
       .menuIcon {
         opacity: 1;
         width: auto;
-        transition: all .5s ease .5s;
+        transition: all .5s ease 1s;
       }
     }
   }

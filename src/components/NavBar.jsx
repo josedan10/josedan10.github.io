@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactSVG from 'react-svg'
-import { Link } from 'react-router-dom'
+import { Link as RouterLink } from 'react-router-dom'
+import { Link, animateScroll as scroll } from 'react-scroll'
 
 // Svgs
 import openBracketIcon from '../assets/icons/openBracket.svg'
@@ -22,7 +23,7 @@ export default class NavBar extends React.Component {
   }
 
   render () {
-    let sections = ['About_Me', 'Services', 'Code', 'Contact']
+    let sections = ['About_Me', 'Services', 'Code', 'Portfolio', 'Contact']
 
     let menuIcon = (
       <div className='menuIcon flex-center' onClick={e => {
@@ -38,13 +39,23 @@ export default class NavBar extends React.Component {
 
     let menuArray = (
       <div className='menuArray flex-center' onClick={e => this.toggleState()}>
-        
+
         <ul className='flex-around'>
           {sections.map((title, index) => <li>
-            <Link key={title + index} className='nav-link flex-center' to={'#' + title}>{(index !== sections.length - 1) ? title + ',' : title }</Link>
-          </li>)}
+            {(title !== 'Portfolio')
+              ? <Link
+                activeClass='active'
+                spy
+                smooth
+                offset={-70}
+                duration={500}
+                key={title + index} className='nav-link flex-center' to={title}>
+                {(index !== sections.length - 1) ? title + ',' : title }
+              </Link>
+              : <RouterLink key={title + index} className='nav-link flex-center' to={title}>{title},</RouterLink>
+            }</li>)}
         </ul>
-        
+
       </div>
     )
 
