@@ -28,9 +28,23 @@ header {
   z-index: 20;
 
   nav {
+
     position: absolute;
     right: 0;
     padding: 2rem 4rem;
+
+    ul {
+      list-style: none;
+    }
+
+    .nav-link {
+      color: $blue;
+      display: block;
+      margin: 5px;
+      text-decoration: none;
+      width: 0;
+      transition: all .5s ease;
+    }
 
     [class*='bracket'] {
       transition: all ease .6s;
@@ -70,6 +84,46 @@ header {
     .pointIcon {
       height: 12px;
       margin: 1px;
+    }
+
+    &.open {
+      .nav-link {
+        width: 60px;
+        transition: all .5s ease;
+        text-align: center;
+      }
+
+      .menuIcon {
+        opacity: 0;
+        width: 0;
+        transition: all .1s ease;
+      }
+
+      .menuArray {
+        opacity: 1;
+        width: auto;
+        transition: all 1.5s ease;
+      }
+    }
+
+    &.closed {
+      .nav-link {
+        width: 0;
+        margin: 0;
+        transition: all 1s ease;
+      }
+
+      .menuArray {
+        opacity: 0;
+        transition: all 1s ease;
+        overflow: hidden;
+      }
+
+      .menuIcon {
+        opacity: 1;
+        width: auto;
+        transition: all .5s ease .5s;
+      }
     }
   }
 
