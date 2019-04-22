@@ -1,0 +1,31 @@
+@import "colors";
+$font_path: '~/assets/fonts/';
+$img_path: '~/assets/';
+
+// Fonts
+
+@font-face {
+  font-family: CamingoCode-Reg;
+  src: url($font_path + 'CamingoCode-Regular.ttf');
+}
+
+@font-face {
+  font-family: CamingoCode-Bold;
+  src: url($font_path + 'CamingoCode-Bold.ttf');
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+}
+
+body,
+main {
+  background-color: $gray;
+  width: 100%;
+  height: 100%;
+  font-family: "CamingoCode-Reg";
+  font-size: 1.25rem;
+}
