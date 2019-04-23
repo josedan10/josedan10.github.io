@@ -2,9 +2,11 @@ import React from 'react'
 import Typist from 'react-typist'
 import TypistLoop from 'react-typist-loop'
 import Particles from 'react-particles-js'
+import { Link } from 'react-scroll'
+import ReactSVG from 'react-svg'
 
 // Svgs
-import ArrowDown from '../components/ArrowDown'
+import arrowDownIcon from '../assets/icons/arrowDown.svg'
 
 
 export default (props) => {
@@ -56,8 +58,13 @@ export default (props) => {
           <Typist startDelay={1000}>{ '{ Making a new world with code }' }</Typist>
         </TypistLoop>
       </h1>
-
-      <ArrowDown />
+      <Link
+        spy
+        smooth
+        duration={500}
+        to='Services'>
+        <ReactSVG className='arrowDownIcon link' src={arrowDownIcon} />
+      </Link>
     </div>
   )
 }

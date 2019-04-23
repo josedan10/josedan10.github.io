@@ -2,15 +2,15 @@ import React from 'react'
 import ReactSVG from 'react-svg'
 
 // Svg
-// import MeMosaic from '../assets/meMosaic.svg'
+import meMosaic from '../assets/images/meMosaic.svg'
 
 export default (props) => {
   return (
     <section id='About_Me' class='container'>
       <h2>About Me</h2>
       <div className='content flex-around'>
-        {/* <ReactSVG src={} /> */}
-        <img src='/images/mosaic.png' alt='mosaic' />
+        <img alt='mosaic' src={meMosaic} />
+        {/* <img src='/images/mosaic.png' alt='mosaic' /> */}
         <article>
           I'm a student, guitar player, singer, developer, athlete and video games lover.
           <br />

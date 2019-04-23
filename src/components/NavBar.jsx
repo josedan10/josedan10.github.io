@@ -48,7 +48,9 @@ export default class NavBar extends React.Component {
                 spy
                 smooth
                 duration={500}
-                key={title + index} className='nav-link flex-center' to={title}>
+                key={title + index} className='nav-link flex-center' to={title}
+                onClick={e => this.toggleState()}
+                >
                 {(index !== sections.length - 1) ? title + ',' : title }
               </Link>
               : <RouterLink key={title + index} className='nav-link flex-center' to={title}>{title},</RouterLink>
