@@ -2,6 +2,10 @@ import React from 'react';
 
 export default (props) => {
   return (
-    <h1>Code</h1>
+    <section id="Code">
+      <div className="container">
+        <h2>Code</h2>
+      </div>
+    </section>
   )
 }

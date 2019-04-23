@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactSVG from 'react-svg'
 import { Link as RouterLink } from 'react-router-dom'
-import { Link, animateScroll as scroll } from 'react-scroll'
+import { Link } from 'react-scroll'
 
 // Svgs
 import openBracketIcon from '../assets/icons/openBracket.svg'

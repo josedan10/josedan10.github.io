@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactSVG from 'react-svg'
 
 // Svg
 import meMosaic from '../assets/images/meMosaic.svg'

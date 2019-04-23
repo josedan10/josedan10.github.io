@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactSVG from 'react-svg'
 
 // Svgs
 import LensIcon from '../assets/icons/lens.svg'
