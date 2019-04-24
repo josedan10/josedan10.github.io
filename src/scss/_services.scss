@@ -1,16 +1,16 @@
 #Services {
   .content {
     perspective: 1000px;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
   }
 }
 
 .service-container {
   width: 25%;
-  border: 1px $black solid;
   position: relative;
   transform-style: preserve-3d;
   transition: 0.6s;
+  border: 1px $black solid;
 
   img {
     width: auto;
@@ -19,21 +19,25 @@
   }
 
   .front {
+    height: 100%;
     z-index: 2;
-    background-color: $gray;
     width: 100%;
     padding: 1rem;
+    background-color: $gray;
+    backface-visibility: hidden;
   }
 
   .back {
+    border: 1px $black solid;
     position: absolute;
     text-align: center;
     transform: rotateY(180deg);
-    background-color: $gray;
     height: 100%;
     width: 100%;
     padding: 1rem;
-    overflow: hidden;
+    overflow: auto;
+    background-color: $gray;
+    backface-visibility: hidden;
   }
 
   &:hover {

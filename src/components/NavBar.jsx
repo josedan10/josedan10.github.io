@@ -37,31 +37,39 @@ export default class NavBar extends React.Component {
       </div>
     )
 
+    let indexLinks = sections.map((title, index) => <li>
+      {(title !== 'Portfolio')
+        ? <Link
+          activeClass='active'
+          spy
+          smooth
+          duration={500}
+          key={title + index} className='nav-link flex-center' to={title}
+          onClick={e => this.toggleState()}
+        >
+          {(index !== sections.length - 1) ? title + ',' : title }
+        </Link>
+        : <RouterLink key={title + index} className='nav-link flex-center' to={'/' + title}>{title},</RouterLink>
+      }</li>)
+
+    let defaultLinks = sections.map((title, index) => (<li>
+      <RouterLink
+        key={title + index}
+        className='nav-link flex-center'
+        to={(title !== 'Portfolio') ? '/#' + title : '/' + title}>{ (index !== sections.length - 1) ? title + ',' : title }</RouterLink></li>))
+
     let menuArray = (
       <div className='menuArray flex-center' onClick={e => this.toggleState()}>
 
         <ul className='flex-around'>
-          {sections.map((title, index) => <li>
-            {(title !== 'Portfolio')
-              ? <Link
-                activeClass='active'
-                spy
-                smooth
-                duration={500}
-                key={title + index} className='nav-link flex-center' to={title}
-                onClick={e => this.toggleState()}
-                >
-                {(index !== sections.length - 1) ? title + ',' : title }
-              </Link>
-              : <RouterLink key={title + index} className='nav-link flex-center' to={title}>{title},</RouterLink>
-            }</li>)}
+          {(window.location.pathname !== '/Portfolio') ? indexLinks : defaultLinks}
         </ul>
 
       </div>
     )
 
     return (
-      <nav className={(this.state.open) ? 'flex-center open' : 'flex-center closed'}>
+      <nav className={(this.state.open) ? 'flex-center open' : 'flex-center closed'} onClick={e => this.toggleState()}>
         <ReactSVG className='bracket-open' src={openBracketIcon} />
         { menuArray }
         { menuIcon }

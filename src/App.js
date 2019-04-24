@@ -20,8 +20,8 @@ class App extends Component {
         </header>
         <div className="App">
           <Switch>
-            <Route exact path='/' component={Index} />
             <Route exatc path='/portfolio' component={Portfolio} />
+            <Route path='/' component={Index} />
           </Switch>
         </div>
       </Router>

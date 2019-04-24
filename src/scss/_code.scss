@@ -1,0 +1,58 @@
+#Code {
+  .grid-container {
+    width: 100%;
+    padding: 2rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .list {
+    grid-column: span 3;
+
+    &__section {
+      padding: 1rem;
+
+      &__name {
+        margin-bottom: .75rem;
+        font-size: 1.25rem;
+        color: $black;
+      }
+
+      &__element {
+        &.active {
+          color: $blue;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    ul {
+      margin-left: 2rem;
+    }
+  }
+
+  .code-item {
+    grid-column: span 9;
+    grid-template-columns: repeat(12, 1fr);
+
+    &__icon {
+      grid-column: span 8;
+
+      &__level {
+        height: auto;
+        margin-bottom: 1rem;
+      }
+
+      &__image {
+        height: 80%;
+      }
+    }
+
+    &__description {
+      grid-column: span 4;
+    }
+  }
+}

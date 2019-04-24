@@ -9,8 +9,6 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="20.98807mm"
-   height="26.468122mm"
    viewBox="0 0 20.988069 50"
    version="1.1"
    id="svg1159"
@@ -58,13 +56,13 @@
      id="layer1"
      transform="translate(-114.60416,-45.827906)">
     <path
-       style="isolation:isolate;fill:#006fff;stroke-width:0.26458332"
+       style="isolation:isolate;fill:#005bd1;stroke-width:0.26458332"
        inkscape:connector-curvature="0"
        id="path1013"
        class="triangle"
        d="m 114.60416,61.780164 10.49417,10.515865 10.4939,-10.515865 z" />
     <path
-       style="isolation:isolate;fill:#006fff;stroke-width:0.26458332"
+       style="isolation:isolate;fill:#005bd1;stroke-width:0.26458332"
        inkscape:connector-curvature="0"
        id="path1015"
        d="m 121.10047,49.824173 c 0,-2.205567 1.7915,-3.996267 3.99786,-3.996267 2.20636,0 3.99759,1.7907 3.99759,3.996267 0,2.205566 -1.79123,3.996531 -3.99759,3.996531 -2.20636,0 -3.99786,-1.790965 -3.99786,-3.996531 z" />

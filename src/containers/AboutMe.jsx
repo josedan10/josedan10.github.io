@@ -5,7 +5,7 @@ import meMosaic from '../assets/images/meMosaic.svg'
 
 export default (props) => {
   return (
-    <section id='About_Me' class='container'>
+    <section id='About_Me' className='container'>
       <h2>About Me</h2>
       <div className='content flex-around'>
         <img alt='mosaic' src={meMosaic} />
