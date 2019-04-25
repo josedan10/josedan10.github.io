@@ -1,8 +1,14 @@
 import React from 'react'
 
 export default (props) => {
-  let { handleChange, handleSubmit, completeds, errors,
-  status } = props
+  let {
+    handleChange,
+    handleSubmit,
+    completeds,
+    errors,
+    status,
+    msg
+  } = props
 
   let totalCompleteds = Object.keys(completeds).filter(field => completeds[field]).length
 
@@ -70,6 +76,7 @@ export default (props) => {
         { totalCompleteds }/6 completed fields
       </p>
       { errors.length > 0 && errors.map(error => <p className='red'>{ error }</p>) }
+      { msg }
     </form>
   )
 }

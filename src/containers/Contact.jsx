@@ -1,5 +1,10 @@
 import React from 'react'
 import ContactForm from '../components/ContactForm'
+import * as emailjs from 'emailjs-com'
+
+import { EmailJSUserID } from '../config'
+
+emailjs.init(EmailJSUserID)
 
 export default class Contact extends React.Component {
   constructor (props) {
@@ -15,7 +20,8 @@ export default class Contact extends React.Component {
       },
       status: 'In progress',
       errors: [],
-      completeds: {}
+      completeds: {},
+      msg: null
     }
 
     this.handleChange = this.handleChange.bind(this)
@@ -38,14 +44,14 @@ export default class Contact extends React.Component {
 
   isNotEmptyFields (fields) {
     let isAnyEmpty = false
-    Object.keys(fields).map(field => {
+    Object.keys(fields).forEach(field => {
       if (fields[field].trim() === '') isAnyEmpty = true
     })
     return !isAnyEmpty
   }
 
   isValidFields (data) {
-    let validEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(data.email)
+    let validEmail = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(data.email)
     let validPhone = /[0-9]{1,3}-[0-9]{10}/.test(data.phone)
 
     return validEmail && validPhone
@@ -88,7 +94,31 @@ export default class Contact extends React.Component {
         ...prevState,
         errors: [],
         status: 'Sending message...'
-      }))
+      }), () => {
+        emailjs.send(
+          'gmail',
+          'contact-template',
+          {
+            ...Form.state.data
+          }
+        )
+          .then(res => {
+            console.log(res)
+            Form.setState(prevState => ({
+              ...prevState,
+              status: 'Sent contact request.',
+              msg: <p className='blue'>Thanks!</p>
+            }))
+          })
+          .catch(err => {
+            console.log(err)
+            Form.setState(prevState => ({
+              ...prevState,
+              status: 'Error',
+              msg: <p className='red'>Error sending contact request.</p>
+            }))
+          })
+      })
     }
   }
 
@@ -127,6 +157,7 @@ export default class Contact extends React.Component {
             completeds={this.state.completeds}
             errors={this.state.errors}
             status={this.state.status}
+            msg={this.state.msg}
             handleSubmit={this.handleSubmit}
             handleChange={this.handleChange} />
         </div>
