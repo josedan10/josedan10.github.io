@@ -8,6 +8,8 @@ import openBracketIcon from '../assets/icons/openBracket.svg'
 import closeBracketIcon from '../assets/icons/closeBracket.svg'
 import pointIcon from '../assets/icons/point.svg'
 
+export const links = ['Home', 'About_Me', 'Services', 'Code', /* 'Portfolio', */ 'Contact']
+
 export default class NavBar extends React.Component {
   constructor (props) {
     super(props)
@@ -23,8 +25,6 @@ export default class NavBar extends React.Component {
   }
 
   render () {
-    let sections = ['About_Me', 'Services', 'Code', 'Portfolio', 'Contact']
-
     let menuIcon = (
       <div className='menuIcon flex-center' onClick={e => {
         e.preventDefault()
@@ -37,7 +37,7 @@ export default class NavBar extends React.Component {
       </div>
     )
 
-    let indexLinks = sections.map((title, index) => <li>
+    let indexLinks = links.map((title, index) => <li>
       {(title !== 'Portfolio')
         ? <Link
           activeClass='active'
@@ -47,16 +47,16 @@ export default class NavBar extends React.Component {
           key={title + index} className='nav-link flex-center' to={title}
           onClick={e => this.toggleState()}
         >
-          {(index !== sections.length - 1) ? title + ',' : title }
+          {(index !== links.length - 1) ? title + ',' : title }
         </Link>
         : <RouterLink key={title + index} className='nav-link flex-center' to={'/' + title}>{title},</RouterLink>
       }</li>)
 
-    let defaultLinks = sections.map((title, index) => (<li>
+    let defaultLinks = links.map((title, index) => (<li>
       <RouterLink
         key={title + index}
         className='nav-link flex-center'
-        to={(title !== 'Portfolio') ? '/#' + title : '/' + title}>{ (index !== sections.length - 1) ? title + ',' : title }</RouterLink></li>))
+        to={(title !== 'Portfolio') ? '/#' + title : '/' + title}>{ (index !== links.length - 1) ? title + ',' : title }</RouterLink></li>))
 
     let menuArray = (
       <div className='menuArray flex-center' onClick={e => this.toggleState()}>

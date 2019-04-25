@@ -6,24 +6,26 @@ import AOS from 'aos'
 import Index from './pages'
 import Portfolio from './pages/portfolio'
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 
 import 'aos/dist/aos.css'
 
 AOS.init()
 
 class App extends Component {
-  render() {
+  render () {
     return (
-      <Router history={ createBrowserHistory() }>
+      <Router history={createBrowserHistory()}>
         <header>
           <NavBar />
         </header>
-        <div className="App">
+        <div className='App'>
           <Switch>
             <Route exatc path='/portfolio' component={Portfolio} />
             <Route path='/' component={Index} />
           </Switch>
         </div>
+        <Footer />
       </Router>
     );
   }

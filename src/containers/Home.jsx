@@ -11,7 +11,7 @@ import arrowDownIcon from '../assets/icons/arrowDown.svg'
 
 export default (props) => {
   return (
-    <div className="banner home flex-center">
+    <div id='Home' className='banner home flex-center'>
       <Particles className='particles' params={
         {
           particles: {
@@ -53,7 +53,7 @@ export default (props) => {
         }
       }/>
 
-      <h1 className="text-code">
+      <h1 className='text-code'>
         <TypistLoop interval={2000}>
           <Typist startDelay={1000}>{ '{ Making a new world with code }' }</Typist>
         </TypistLoop>

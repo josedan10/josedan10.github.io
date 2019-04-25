@@ -103,8 +103,10 @@ header {
 
       .menuArray {
         opacity: 1;
-        width: 500px;
-        transition: all 1.5s ease;
+        // With portfolio
+        // width: 540px;
+        width: 430px;
+        transition: all 1s ease;
         overflow: hidden;
       }
     }
