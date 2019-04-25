@@ -58,8 +58,21 @@ h3 {
   font-size: 1.5rem;
 }
 
-.text-code {
+.text-code,
+.bold {
   font-family: CamingoCode-Bold;
+}
+
+.blue {
+  color: $blue;
+}
+
+.red {
+  color: $red;
+}
+
+code {
+  font-family: CamingoCode-Reg;
 }
 
 @import "animations";
@@ -68,5 +81,6 @@ h3 {
 @import "about";
 @import "services";
 @import "code";
+@import "contact";
 @import "Typist";
 @import "components";
