@@ -85,7 +85,7 @@ export default class Contact extends React.Component {
             ...prevState,
             errors: []
           }))
-        }, 2000)
+        }, 9000)
         return
       }
 
@@ -106,7 +106,7 @@ export default class Contact extends React.Component {
             console.log(res)
             Form.setState(prevState => ({
               ...prevState,
-              status: 'Sent contact request.',
+              status: 'Sent contact request',
               msg: <p className='blue'>Thanks!</p>
             }))
           })
@@ -149,7 +149,7 @@ export default class Contact extends React.Component {
                 &nbsp;&nbsp;&nbsp;&nbsp;{ 'message' } <span className='blue'>!==</span> { '""' } <br />
                 &nbsp;&nbsp;<span className='blue'>) <span className='bold'>console.log</span>("Sent message") </span> <br />
                 &nbsp;&nbsp;<span className='blue'><span className='bold'>else </span><span className='bold'>console.log</span>("Error sending message")</span> <br />
-                <span className='blue'>}</span>
+                <span className='blue'>{ '}' }</span>
               </code>
             </pre>
           </div>

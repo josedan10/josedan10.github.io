@@ -90,7 +90,7 @@ export default (props) => {
         <h4>Follow me!</h4>
         <div className='social__links flex-around'>
           { socialNetworks.map(social => (
-            <a key={social.url} href={social.url + social.username} className='social__links__link'>
+            <a key={social.url} target='_blankAdding' href={social.url + social.username} className='flex-center social__links__link'>
               <img src={`/images/${social.name}.svg`} alt={social.name} />
             </a>
           )) }

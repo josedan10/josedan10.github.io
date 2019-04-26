@@ -3,6 +3,7 @@
     perspective: 1000px;
     padding-top: 2rem;
   }
+  // background-color: $black;
 }
 
 .service-container {
@@ -11,6 +12,7 @@
   transform-style: preserve-3d;
   transition: 0.6s;
   border: 1px $black solid;
+  box-shadow: 10px 10px 5px rgba($color: $black, $alpha: .3);
 
   img {
     width: auto;
@@ -23,12 +25,11 @@
     z-index: 2;
     width: 100%;
     padding: 1rem;
-    background-color: $gray;
+    // background-color: $black;
     backface-visibility: hidden;
   }
 
   .back {
-    border: 1px $black solid;
     position: absolute;
     text-align: center;
     transform: rotateY(180deg);
@@ -36,7 +37,8 @@
     width: 100%;
     padding: 1rem;
     overflow: auto;
-    background-color: $gray;
+    color: $gray;
+    background-color: $black;
     backface-visibility: hidden;
   }
 

@@ -25,7 +25,7 @@ export default ({ element }) => {
     element ? <div className='code-item grid-container'>
       <div className='code-item__icon flex-center-vertical'>
         { xpIcon() }
-        <img alt={element.name + ' icon'} className='code-item__icon__image' src={`/images/${element.icon}`} />
+        <img data-aos="zoom-in" alt={element.name + ' icon'} className='code-item__icon__image' src={`/images/${element.icon}`} />
       </div>
       <div className='code-item__description'>
         { element.description }

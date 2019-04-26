@@ -9,7 +9,7 @@ export default (props) => {
   return (
     <section id='Services' className='container'>
       <h2>Services</h2>
-      <div className='content flex-around'>
+      <div data-aos='fade-up' data-aos-delay="200" className='content flex-around'>
       
         <div className='service-container flex-center'>
           <div className='front flex-center-vertical'>
