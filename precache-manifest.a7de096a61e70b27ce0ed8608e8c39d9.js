@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/semicolon.65466344.svg"
   },
   {
-    "revision": "0869834325a57b025de8",
-    "url": "/static/css/main.590b47dd.chunk.css"
+    "revision": "725f0af442af8b9159e4",
+    "url": "/static/css/main.bad5f8f3.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/static/media/CamingoCode-Regular.cb296dd6.ttf"
   },
   {
-    "revision": "8a45d2b0d160167b1ca6",
-    "url": "/static/js/2.dcfc6b4f.chunk.js"
+    "revision": "e7f093582fef48767346",
+    "url": "/static/js/2.f9450cb7.chunk.js"
   },
   {
     "revision": "b95a81f4695ee410d8896ad37836361a",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/lens.75cda4de.svg"
   },
   {
-    "revision": "0869834325a57b025de8",
-    "url": "/static/js/main.9249f105.chunk.js"
+    "revision": "725f0af442af8b9159e4",
+    "url": "/static/js/main.cb53757f.chunk.js"
   },
   {
     "revision": "311f4bee69815544f04a82cb196f9999",
@@ -64,11 +64,11 @@ self.__precacheManifest = [
     "url": "/static/media/CamingoCode-Bold.d30c1423.ttf"
   },
   {
-    "revision": "8a45d2b0d160167b1ca6",
+    "revision": "e7f093582fef48767346",
     "url": "/static/css/2.157450af.chunk.css"
   },
   {
-    "revision": "fc72f38f38e819f502009492b4088bd2",
+    "revision": "52cb57ce73b14ab776f429ca27300dad",
     "url": "/index.html"
   }
 ];
