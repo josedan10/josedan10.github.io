@@ -1,97 +1,111 @@
 {
-  "languages": [
-    {
-      "name": "Javascript",
-      "description": "Text here",
-      "subItems": [
-        "React",
-        "Vue.js",
-        "Express.js"
-      ],
-      "level": 3,
-      "icon": "javascript.svg"
-    },
-    {
-      "name": "Python",
-      "description": "Text here",
-      "subItems": [],
-      "level": 2,
-      "icon": "python.svg"
-    },
-    {
-      "name": "C++",
-      "description": "Text here",
-      "subItems": [],
-      "level": 2,
-      "icon": "c++.svg"
-    },
-    {
-      "name": "C#",
-      "description": "Text here",
-      "subItems": [],
-      "level": 1,
-      "icon": "c-sharp.svg"
-    },
-    {
-      "name": "Matlab",
-      "description": "Text here",
-      "subItems": [],
-      "level": 2,
-      "icon": "matlab.svg"
-    },
-    {
-      "name": "Visual Basic",
-      "description": "Text here",
-      "subItems": [],
-      "level": 1,
-      "icon": "visual-studio.svg"
-    },
-    {
-      "name": "Php",
-      "description": "Text here",
-      "subItems": [
-        "Laravel",
-        "Codeigniter",
-        "Wordpress"
-      ],
-      "level": 3,
-      "icon": "php.svg"
-    }
-  ],
-  "databases": [
-    {
-      "name": "Mongo DB",
-      "description": "Text here",
-      "subItems": [],
-      "level": 3
-    },
-    {
-      "name": "MySQL",
-      "description": "Text here",
-      "subItems": [],
-      "level": 2,
-      "icon": "mysql.svg"
-    },
-    {
-      "name": "PostgreSQL",
-      "description": "Text here",
-      "subItems": [],
-      "level": 1,
-      "icon": "postgreSQL.svg"
-    }
-  ],
-  "stacks": [
-    {
-      "name": "MERN + GraphQL",
-      "description": "Text here",
-      "subItems": [],
-      "level": 2
-    },
-    {
-      "name": "Laravel + React",
-      "description": "Text here",
-      "subItems": [],
-      "level": 2
-    }
-  ]
+  "code": {
+    "languages": [
+      {
+        "name": "Javascript",
+        "description": "Text here",
+        "subItems": [
+          "React",
+          "Vue.js",
+          "Express.js"
+        ],
+        "level": 3,
+        "icon": "javascript.svg"
+      },
+      {
+        "name": "Python",
+        "description": "Text here",
+        "subItems": [],
+        "level": 2,
+        "icon": "python.svg"
+      },
+      {
+        "name": "C++",
+        "description": "Text here",
+        "subItems": [],
+        "level": 2,
+        "icon": "c++.svg"
+      },
+      {
+        "name": "C#",
+        "description": "Text here",
+        "subItems": [],
+        "level": 1,
+        "icon": "c-sharp.svg"
+      },
+      {
+        "name": "Matlab",
+        "description": "Text here",
+        "subItems": [],
+        "level": 2,
+        "icon": "matlab.svg"
+      },
+      {
+        "name": "Visual Basic",
+        "description": "Text here",
+        "subItems": [],
+        "level": 1,
+        "icon": "visual-studio.svg"
+      },
+      {
+        "name": "Php",
+        "description": "Text here",
+        "subItems": [
+          "Laravel",
+          "Codeigniter",
+          "Wordpress"
+        ],
+        "level": 3,
+        "icon": "php.svg"
+      }
+    ],
+    "databases": [
+      {
+        "name": "Mongo DB",
+        "description": "Text here",
+        "subItems": [],
+        "level": 3
+      },
+      {
+        "name": "MySQL",
+        "description": "Text here",
+        "subItems": [],
+        "level": 2,
+        "icon": "mysql.svg"
+      },
+      {
+        "name": "PostgreSQL",
+        "description": "Text here",
+        "subItems": [],
+        "level": 1,
+        "icon": "postgreSQL.svg"
+      }
+    ],
+    "stacks": [
+      {
+        "name": "MERN + GraphQL",
+        "description": "Text here",
+        "subItems": [],
+        "level": 2
+      },
+      {
+        "name": "Laravel + React",
+        "description": "Text here",
+        "subItems": [],
+        "level": 2
+      }
+    ]
+  },
+  "services": {
+    "design": [
+      "In this area I usually focus very well on the creation and development of the identity of a brand. For me it is very important that the brand transmit correctly the values and that it is seen in the correct way by the target audience. I complement this area with a good UI / UX with the purpose of creating web pages that allow you to have a quite intuitive navigation, a different experience but above all that the webs are functional in every small detail."
+    ],
+    "development": [
+      "This is the area in which I enjoy the most, also in which I spend more work because sometimes things do not go as simple as one expects, but in the end I love doing this.",
+      "Desktop applications, apps for Android, web platforms, eCommerce, customized inventory systems and also developed in excel, integration with different APIs in their applications, payment gateways, data storage structure, console applications. Various alternatives for every need the client may have."
+    ],
+    "SEO": [
+      "The positioning on the web is very important in this era where the digitalization of business reigns, that is why I have dedicated myself to taking courses to give my clients the opportunity to stand out on the web, through various SEO strategies."
+    ]
+  }
 }

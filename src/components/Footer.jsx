@@ -3,7 +3,6 @@ import logo from '../logo.svg'
 
 import { links } from './NavBar'
 import { Link as RouterLink } from 'react-router-dom'
-import { Link } from 'react-scroll'
 
 const socialNetworks = [
   {
@@ -29,25 +28,6 @@ const socialNetworks = [
 ]
 
 export default (props) => {
-  const defaultLinks = (
-    <ul className='navigation__container flex-center-vertical'>
-      { links.map(link => {
-        if (link !== 'Portfolio') {
-          return (
-            <li key={link} className='navigation__container__element'>
-              <RouterLink className='navigation__container__element__link' to={'/#' + link}>{ link }</RouterLink>
-            </li>
-          )
-        } else {
-          return (
-            <li key={link} className='navigation__container__element'>
-              <RouterLink className='navigation__container__element__link' to={link}>{ link }</RouterLink>
-            </li>
-          )
-        }
-      }) }
-    </ul>
-  )
 
   const indexLinks = (
     <ul className='navigation__container flex-center-vertical'>
@@ -55,13 +35,11 @@ export default (props) => {
         if (link !== 'Portfolio') {
           return (
             <li key={link} className='navigation__container__element'>
-              <Link
-                to={link}
+              <a
+                href={link}
+                data-scroll
                 className='navigation__container__element__link'
-                spy
-                smooth
-                duration={500}
-              >{ link }</Link>
+              >{ link }</a>
             </li>
           )
         } else {
@@ -83,7 +61,7 @@ export default (props) => {
       </div>
 
       <div className='navigation'>
-        { (window.location.pathname !== '/') ? defaultLinks : indexLinks }
+        { indexLinks }
       </div>
 
       <div className='social flex-center-vertical'>

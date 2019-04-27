@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactSVG from 'react-svg'
 import { Link as RouterLink } from 'react-router-dom'
-import { Link } from 'react-scroll'
 
 // Svgs
 import openBracketIcon from '../assets/icons/openBracket.svg'
@@ -52,12 +51,6 @@ export default class NavBar extends React.Component {
         </a>
         : <RouterLink key={title + index} className='nav-link flex-center' to={'/' + title}>{title},</RouterLink>
       }</li>)
-
-    let defaultLinks = links.map((title, index) => (<li>
-      <RouterLink
-        key={title + index}
-        className='nav-link flex-center'
-        to={(title !== 'Portfolio') ? '/#' + title : '/' + title}>{ (index !== links.length - 1) ? title + ',' : title }</RouterLink></li>))
 
     let menuArray = (
       <div className='menuArray flex-center' onClick={e => this.toggleState()}>

@@ -1,5 +1,4 @@
 import React from 'react'
-import Typist from 'react-typist'
 
 export default (props) => {
   let {
@@ -81,6 +80,8 @@ export default (props) => {
       </div>
       <b className='blue'>)</b>
       <br /><br />
+      <p className="bold blue">Please, press enter to send the message...</p>
+      <br/>
       <p className='blue'>
         { totalCompleteds }/6 completed fields
       </p>

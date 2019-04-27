@@ -1,9 +1,9 @@
 import React from 'react'
 import axios from 'axios'
 
-import CodeElement from '../components/CodeElement'
-
 import { baseUrl } from '../config'
+
+import CodeElement from '../components/CodeElement'
 
 export default class Code extends React.Component {
   constructor (props) {
@@ -47,7 +47,7 @@ export default class Code extends React.Component {
       .then(res => this.setState(prevState => (
         {
           ...prevState,
-          data: res.data
+          data: res.data.code
         }
       )))
       .catch(err => console.error(err))

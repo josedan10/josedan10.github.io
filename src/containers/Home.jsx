@@ -1,8 +1,6 @@
 import React from 'react'
 import Typist from 'react-typist'
-import TypistLoop from 'react-typist-loop'
 import Particles from 'react-particles-js'
-import { Link } from 'react-scroll'
 import ReactSVG from 'react-svg'
 
 // Svgs
