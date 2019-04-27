@@ -38,11 +38,23 @@
   .code-item {
     grid-column: span 9;
     grid-template-columns: repeat(12, 1fr);
+    transition: opacity 0.2s;
+    opacity: 0;
+
+    &.appear {
+      opacity: 1;
+      transition: opacity 0.2s;
+    }
+
+    &.hide {
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
 
     &__icon {
       grid-column: span 8;
-      background-color: $black;
-      padding: 3rem 1rem;
+      // background-color: $black;
+      // padding: 3rem 1rem;
 
       &__level {
         height: auto;

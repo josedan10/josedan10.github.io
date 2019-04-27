@@ -5,7 +5,8 @@ import ArrowDownIcon from '../assets/icons/arrowDown.svg'
 import ArrowUpIcon from '../assets/icons/arrowUp.svg'
 import PointIcon from '../assets/icons/point.svg'
 
-export default ({ element }) => {
+export default ({ element, transition }) => {
+
   let xpIcon = () => {
     if (element) {
       switch (element.level) {
@@ -22,14 +23,16 @@ export default ({ element }) => {
   }
 
   return (
-    element ? <div className='code-item grid-container'>
-      <div className='code-item__icon flex-center-vertical'>
-        { xpIcon() }
-        <img data-aos="zoom-in" alt={element.name + ' icon'} className='code-item__icon__image' src={`/images/${element.icon}`} />
+    element ? (
+      <div className={'code-item grid-container ' + transition}>
+        <div className='code-item__icon flex-center-vertical'>
+          { xpIcon() }
+          <img data-aos="zoom-in" alt={element.name + ' icon'} className='code-item__icon__image' src={`/images/${element.icon}`} />
+        </div>
+        <div className='code-item__description'>
+          { element.description }
+        </div>
       </div>
-      <div className='code-item__description'>
-        { element.description }
-      </div>
-    </div> : 'Loading...'
+    ) : 'Loading...'
   )
 }

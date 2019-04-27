@@ -14,10 +14,34 @@ export default class Code extends React.Component {
         databases: [],
         stacks: []
       },
-      active: ['languages', 0]
+      active: ['languages', 0],
+      transition: 'hide'
     }
+
+    this.hide = this.hide.bind(this)
+    this.appear = this.appear.bind(this)
   }
 
+  componentDidMount () {
+    this.setState(prevState => ({
+      ...prevState,
+      transition: 'appear'
+    }))
+  }
+
+  hide () {
+    this.setState(prevState => ({
+      ...prevState,
+      transition: 'hide'
+    }))
+  }
+
+  appear () {
+    this.setState(prevState => ({
+      ...prevState,
+      transition: 'appear'
+    }))
+  }
   componentWillMount () {
     axios.get(`${baseUrl}/data.json`)
       .then(res => this.setState(prevState => (
@@ -30,10 +54,15 @@ export default class Code extends React.Component {
   }
 
   setActive (name, index) {
-    this.setState(prevState => ({
-      ...prevState,
-      active: [name, index]
-    }))
+    let context = this
+    this.hide()
+    setTimeout(() => {
+      context.setState(prevState => ({
+        ...prevState,
+        active: [name, index]
+      }))
+    }, 200)
+    setTimeout(this.appear, 500);
   }
 
   render () {
@@ -63,7 +92,7 @@ export default class Code extends React.Component {
                 </div>
               ) }
             </aside>
-            <CodeElement element={data[activeSection][activeElement]} />
+            <CodeElement transition={this.state.transition} element={data[activeSection][activeElement]} />          
           </div>
         </div>
       </section>

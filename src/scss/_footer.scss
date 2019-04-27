@@ -1,7 +1,11 @@
 footer {
-  background-color: $black;
+  background-color: rgba($color: $gray, $alpha: .1);
   width: 100%;
   padding: 3rem;
+  
+  * {
+    color: $blue;
+  }
 
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 4rem 1rem;

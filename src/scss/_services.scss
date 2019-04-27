@@ -11,8 +11,10 @@
   position: relative;
   transform-style: preserve-3d;
   transition: 0.6s;
-  border: 1px $black solid;
-  box-shadow: 10px 10px 5px rgba($color: $black, $alpha: .3);
+  border: 1px $blue solid;
+  // border-top: 1px $blue solid;
+  // border-bottom: 1px $blue solid;
+  // box-shadow: 5px 5px 5px rgba($color: $blue, $alpha: .3);
 
   img {
     width: auto;

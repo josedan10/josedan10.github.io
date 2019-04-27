@@ -11,7 +11,7 @@ export default (props) => {
         <img alt='mosaic' src={meMosaic} />
         {/* <img src='/images/mosaic.png' alt='mosaic' /> */}
         <article>
-          I'm a student, guitar player, singer, developer, athlete and video games lover.
+          Hello, my name is José Daniel. I'm a student, guitar player, singer, developer, athlete and video games lover.
           <br />
           <br />
           Everything I do, I do it because I love doing it. Much of my time is spent experimenting and learning new trends to always offer the best to those who need my services.

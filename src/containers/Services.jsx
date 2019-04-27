@@ -5,6 +5,7 @@ import LensIcon from '../assets/icons/lens.svg'
 import SemiColonIcon from '../assets/icons/semicolon.svg'
 import BulbIcon from '../assets/icons/bulb.svg'
 
+
 export default (props) => {
   return (
     <section id='Services' className='container'>
