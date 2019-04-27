@@ -4,6 +4,12 @@
   background-color: $black;
   color: $blue;
   position: relative;
+
+  a {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .particles {

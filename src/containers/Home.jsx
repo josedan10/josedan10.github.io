@@ -10,6 +10,7 @@ import arrowDownIcon from '../assets/icons/arrowDown.svg'
 
 
 export default (props) => {
+  const text = '{ Making a new world with code }'
   return (
     <div id='Home' className='banner home flex-center'>
       <Particles className='particles' params={
@@ -54,17 +55,15 @@ export default (props) => {
       }/>
 
       <h1 className='text-code'>
-        <TypistLoop interval={2000}>
-          <Typist startDelay={1000}>{ '{ Making a new world with code }' }</Typist>
-        </TypistLoop>
+        <Typist startDelay={1000}>{ text }</Typist>
       </h1>
-      <Link
-        spy
-        smooth
-        duration={500}
-        to='Services'>
-        <ReactSVG className='arrowDownIcon link' src={arrowDownIcon} />
-      </Link>
+      <a
+        data-scroll
+        href='#About_Me'
+        onClick={e => e.preventDefault()}
+      >
+        <ReactSVG className='arrowDownIcon link arrowDownLink' src={arrowDownIcon} />
+      </a>
     </div>
   )
 }

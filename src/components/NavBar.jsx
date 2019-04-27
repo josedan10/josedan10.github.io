@@ -39,16 +39,17 @@ export default class NavBar extends React.Component {
 
     let indexLinks = links.map((title, index) => <li>
       {(title !== 'Portfolio')
-        ? <Link
-          activeClass='active'
-          spy
-          smooth
-          duration={500}
-          key={title + index} className='nav-link flex-center' to={title}
-          onClick={e => this.toggleState()}
+        ? <a
+          data-scroll
+          href={'/#' + title}
+          key={title + index} className='nav-link flex-center'
+          onClick={e => {
+            this.toggleState()
+            e.preventDefault()
+          }}
         >
           {(index !== links.length - 1) ? title + ',' : title }
-        </Link>
+        </a>
         : <RouterLink key={title + index} className='nav-link flex-center' to={'/' + title}>{title},</RouterLink>
       }</li>)
 
@@ -62,7 +63,8 @@ export default class NavBar extends React.Component {
       <div className='menuArray flex-center' onClick={e => this.toggleState()}>
 
         <ul className='flex-around'>
-          {(window.location.pathname !== '/Portfolio') ? indexLinks : defaultLinks}
+          {/* {(window.location.pathname !== '/Portfolio') ? indexLinks : defaultLinks} */}
+          {indexLinks}
         </ul>
 
       </div>
