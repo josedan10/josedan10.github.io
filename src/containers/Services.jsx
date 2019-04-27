@@ -57,7 +57,7 @@ export default class Services extends React.Component {
               }
 
               return (
-                <div className='service-container flex-center'>
+                <div key={service} className='service-container flex-center'>
                   <div className='front flex-center-vertical'>
                     {icon}
                     <h3>{title}</h3>

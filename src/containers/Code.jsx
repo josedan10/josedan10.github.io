@@ -86,7 +86,14 @@ export default class Code extends React.Component {
                         className={(data[activeSection][activeElement] === element) ? 'list__section__element active' : 'list__section__element'}
                         key={element.name}
                         onClick={e => this.setActive(name, indexElement)}
-                      >{ element.name }</li>
+                      >
+                        { element.name }
+                        { element.subItems && 
+                          <ul>
+                            { element.subItems.map((subitem, indexSubItem) => <li key={subitem + indexSubItem}>{ subitem }</li>) }
+                          </ul>
+                        }
+                      </li>
                     )) }
                   </ul>
                 </div>
