@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactSVG from 'react-svg'
+import renderHTML from 'react-render-html'
 
 import ArrowDownIcon from '../assets/icons/arrowDown.svg'
 import ArrowUpIcon from '../assets/icons/arrowUp.svg'
@@ -30,7 +31,7 @@ export default ({ element, transition }) => {
           <img data-aos="zoom-in" alt={element.name + ' icon'} className='code-item__icon__image' src={`/images/${element.icon}`} />
         </div>
         <div className='code-item__description'>
-          { element.description }
+          { element.description.map((paragraph, index) => <p key={element.name + index}>{renderHTML(paragraph)}</p>) }
         </div>
       </div>
     ) : 'Loading...'

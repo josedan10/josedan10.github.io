@@ -9,13 +9,14 @@
 
   .list {
     grid-column: span 3;
-
+    
     &__section {
+      margin-bottom: 2rem;
 
       &__name {
         margin-bottom: .75rem;
         font-size: 1.25rem;
-        color: $black;
+        color: $blue;
       }
 
       &__element {
@@ -51,7 +52,7 @@
     }
 
     &__icon {
-      grid-column: span 8;
+      grid-column: span 6;
       // background-color: $black;
       // padding: 3rem 1rem;
 
@@ -61,12 +62,13 @@
       }
 
       &__image {
-        height: 80%;
+        width: 90%;
+        max-height: 80%;
       }
     }
 
     &__description {
-      grid-column: span 4;
+      grid-column: span 6;
       padding: 2rem;
     }
   }

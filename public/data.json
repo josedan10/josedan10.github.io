@@ -3,7 +3,10 @@
     "languages": [
       {
         "name": "Javascript",
-        "description": "Text here",
+        "description": [
+          "I have been working with javascript for 3 years, however in the last two years it is where I have approached this language, through frameworks like React and Vue.js.",
+          "In the last eight months I have dedicated myself completely to this language, trying different libraries and integrations with Node.js."
+        ],
         "subItems": [
           "React",
           "Vue.js",
@@ -14,42 +17,35 @@
       },
       {
         "name": "Python",
-        "description": "Text here",
+        "description": [
+          "It was the first language I learned. With that I started to study the concepts of OOP. I started with this language because I wanted to learn to develop video games and in college they recommended me to start with this language.",
+          "I do not give much use now, only in exceptional cases that I have to perform some algorithm quickly and I do it in python.",
+          "In spite of what I have used a lot in the university, especially to put into practice some things that I was seeing in classes. Example of this I developed a brute force algorithm with a small scheme of information gathering, with the aim of putting some concepts on discrete structures into practice."
+      ],
         "subItems": [],
         "level": 2,
         "icon": "python.svg"
       },
       {
         "name": "C++",
-        "description": "Text here",
+        "description": [
+          "I have a good command of the operation of data structures and memory management thanks to C ++. I love this language, I do not have much to explain with it, it has simply made me very passionate about studying enough concepts on computer science on my own.",
+          "Most of the projects I have done in this language have been university projects, including an RSA encryptor and a multiplayer game on the console."
+        ],
         "subItems": [],
         "level": 2,
         "icon": "c++.svg"
       },
       {
-        "name": "C#",
-        "description": "Text here",
-        "subItems": [],
-        "level": 1,
-        "icon": "c-sharp.svg"
-      },
-      {
         "name": "Matlab",
-        "description": "Text here",
+        "description": ["Matlab I learned it in the university, in a course of scientific calculation and later I used it to make algorithms of optimization in linear programming."],
         "subItems": [],
         "level": 2,
         "icon": "matlab.svg"
       },
       {
-        "name": "Visual Basic",
-        "description": "Text here",
-        "subItems": [],
-        "level": 1,
-        "icon": "visual-studio.svg"
-      },
-      {
         "name": "Php",
-        "description": "Text here",
+        "description": ["Text here"],
         "subItems": [
           "Laravel",
           "Codeigniter",
@@ -62,36 +58,31 @@
     "databases": [
       {
         "name": "Mongo DB",
-        "description": "Text here",
+        "description": ["Text here"],
         "subItems": [],
         "level": 3
       },
       {
         "name": "MySQL",
-        "description": "Text here",
+        "description": ["Text here"],
         "subItems": [],
         "level": 2,
         "icon": "mysql.svg"
-      },
-      {
-        "name": "PostgreSQL",
-        "description": "Text here",
-        "subItems": [],
-        "level": 1,
-        "icon": "postgreSQL.svg"
       }
     ],
     "stacks": [
       {
         "name": "MERN + GraphQL",
-        "description": "Text here",
+        "description": ["Text here"],
         "subItems": [],
+        "icon": "MERN + GraphQL.svg",
         "level": 2
       },
       {
         "name": "Laravel + React",
-        "description": "Text here",
+        "description": ["Text here"],
         "subItems": [],
+        "icon": "laravel+react.svg",
         "level": 2
       }
     ]
