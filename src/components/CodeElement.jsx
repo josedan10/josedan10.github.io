@@ -27,7 +27,7 @@ export default ({ element, transition }) => {
     element ? (
       <div className={'code-item grid-container ' + transition}>
         <div className='code-item__icon flex-center-vertical'>
-          { xpIcon() }
+          {/* { xpIcon() } */}
           <img data-aos="zoom-in" alt={element.name + ' icon'} className='code-item__icon__image' src={`/images/${element.icon}`} />
         </div>
         <div className='code-item__description'>

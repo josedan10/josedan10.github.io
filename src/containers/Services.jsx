@@ -8,7 +8,6 @@ import LensIcon from '../assets/icons/lens.svg'
 import SemiColonIcon from '../assets/icons/semicolon.svg'
 import BulbIcon from '../assets/icons/bulb.svg'
 
-
 export default class Services extends React.Component {
   constructor (props) {
     super(props)
@@ -33,7 +32,7 @@ export default class Services extends React.Component {
     return (
       <section id='Services' className='container'>
         <h2>Services</h2>
-        <div data-aos='fade-up' data-aos-delay="200" className='content flex-around'>
+        <div data-aos='fade-up' data-aos-delay='200' className='content flex-around'>
 
           {
             services &&
@@ -72,6 +71,5 @@ export default class Services extends React.Component {
         </div>
       </section>
     )
-
   }
 }
