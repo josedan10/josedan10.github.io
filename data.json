@@ -3,7 +3,10 @@
     "languages": [
       {
         "name": "Javascript",
-        "description": "Text here",
+        "description": [
+          "I have been working with javascript for 3 years, however in the last two years it is where I have approached this language, through frameworks like React and Vue.js.",
+          "In the last eight months I have dedicated myself completely to this language, trying different libraries and integrations with Node.js."
+        ],
         "subItems": [
           "React",
           "Vue.js",
@@ -14,42 +17,39 @@
       },
       {
         "name": "Python",
-        "description": "Text here",
+        "description": [
+          "It was the first language I learned. With that I started to study the concepts of OOP. I started with this language because I wanted to learn to develop video games and in college they recommended me to start with this language.",
+          "I do not give much use now, only in exceptional cases that I have to perform some algorithm quickly and I do it in python.",
+          "In spite of what I have used a lot in the university, especially to put into practice some things that I was seeing in classes. Example of this I developed a brute force algorithm with a small scheme of information gathering, with the aim of putting some concepts on discrete structures into practice."
+      ],
         "subItems": [],
         "level": 2,
         "icon": "python.svg"
       },
       {
         "name": "C++",
-        "description": "Text here",
+        "description": [
+          "I have a good command of the operation of data structures and memory management thanks to C ++. I love this language, I do not have much to explain with it, it has simply made me very passionate about studying enough concepts on computer science on my own.",
+          "Most of the projects I have done in this language have been university projects, including an RSA encryptor and a multiplayer game on the console."
+        ],
         "subItems": [],
         "level": 2,
         "icon": "c++.svg"
       },
       {
-        "name": "C#",
-        "description": "Text here",
-        "subItems": [],
-        "level": 1,
-        "icon": "c-sharp.svg"
-      },
-      {
         "name": "Matlab",
-        "description": "Text here",
+        "description": ["Matlab I learned it in the university, in a course of scientific calculation and later I used it to make algorithms of optimization in linear programming."],
         "subItems": [],
         "level": 2,
         "icon": "matlab.svg"
       },
       {
-        "name": "Visual Basic",
-        "description": "Text here",
-        "subItems": [],
-        "level": 1,
-        "icon": "visual-studio.svg"
-      },
-      {
         "name": "Php",
-        "description": "Text here",
+        "description": [
+          "I work for six months in <a href='https://instagram.com/groowly' rel='nofollow'>Groowly</a> as fullstack developer. I must to learn codeigniter because the projects of the previuos programmer are made using this framework",
+          "I fix some bugs in the existents websites, and develop new sites like: <a href='http://kathiescloset.mx>Kathies Closet</a>.",
+          "I made the structure of the data to store in the database and the development of the websites using the designs that the designers give me."
+        ],
         "subItems": [
           "Laravel",
           "Codeigniter",
@@ -62,36 +62,40 @@
     "databases": [
       {
         "name": "Mongo DB",
-        "description": "Text here",
+        "description": [
+          "I have eight months working with MongoDB and I in love of them. It's very simple work with this using node.js and make restful APIs."
+        ],
         "subItems": [],
-        "level": 3
+        "level": 3,
+        "icon": "mongo.svg"
       },
       {
         "name": "MySQL",
-        "description": "Text here",
+        "description": [
+          "When I started to develop this was the first relational database management system that I used. I learned it in conjunction with php, and I used it in my laravel projects"
+        ],
         "subItems": [],
         "level": 2,
         "icon": "mysql.svg"
-      },
-      {
-        "name": "PostgreSQL",
-        "description": "Text here",
-        "subItems": [],
-        "level": 1,
-        "icon": "postgreSQL.svg"
       }
     ],
     "stacks": [
       {
         "name": "MERN + GraphQL",
-        "description": "Text here",
+        "description": [
+          "I recently have been testing GraphQL and now I don't want don't use it in my projects. I think that this amazing tool is very helpful to organize and get specific data from database."
+        ],
         "subItems": [],
+        "icon": "MERN + GraphQL.svg",
         "level": 2
       },
       {
         "name": "Laravel + React",
-        "description": "Text here",
+        "description": [
+          "I have a couple of projects using this two technologies, the most important is an admin system for <a href='https://instagram.com/guia_usb'>GUIA USB</a>"
+        ],
         "subItems": [],
+        "icon": "laravel+react.svg",
         "level": 2
       }
     ]
