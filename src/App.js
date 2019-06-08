@@ -6,6 +6,7 @@ import SmoothScroll from 'smooth-scroll'
 
 import Index from './pages'
 import Portfolio from './pages/portfolio'
+import Blog from './pages/blog'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 
@@ -28,7 +29,8 @@ class App extends Component {
         </header>
         <div className='App'>
           <Switch>
-            <Route exatc path='/portfolio' component={Portfolio} />
+            <Route exact path='/blog' component={Blog} />
+            <Route exact path='/portfolio' component={Portfolio} />
             <Route path='/' component={Index} />
           </Switch>
         </div>

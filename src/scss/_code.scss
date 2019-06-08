@@ -4,7 +4,6 @@
     height: 100%;
     padding: 2rem;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr;
   }
 
   .list {
@@ -38,6 +37,7 @@
   .code-item {
     grid-column: span 9;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     transition: opacity 0.2s;
     opacity: 0;
 

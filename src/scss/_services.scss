@@ -2,12 +2,15 @@
   .content {
     perspective: 1000px;
     padding-top: 2rem;
+    flex-wrap: wrap;
   }
   // background-color: $black;
 }
 
 .service-container {
   width: 25%;
+  min-width: 300px;
+  margin: 20px;
   position: relative;
   transform-style: preserve-3d;
   transition: 0.6s;

@@ -127,7 +127,7 @@ export default class Contact extends React.Component {
       <div id='Contact' className='container'>
         <h2>Contact</h2>
         <div className='content flex-center'>
-          <div className='schema'>
+          <div className='schema hideOnTablet'>
             <pre>
               <code>
                 <span className='blue'>function <span className='bold'>sendMessage </span>(</span>

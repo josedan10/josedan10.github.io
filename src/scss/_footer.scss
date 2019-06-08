@@ -18,6 +18,12 @@ footer {
     font-size: 1.2rem;
   }
 
+  .brand-container {
+    p {
+      text-align: center;
+    }
+  }
+
   .logo {
     margin: 0 auto 1rem;
     max-height: 200px;
@@ -62,5 +68,6 @@ footer {
 
   .credits {
     grid-column: span 12;
+    text-align: center;
   }
 }

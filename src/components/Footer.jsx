@@ -60,7 +60,7 @@ export default (props) => {
         <p className='blue bold'>{ '{ Making a new world with code }' }</p>
       </div>
 
-      <div className='navigation'>
+      <div className='navigation hideOnSm'>
         { indexLinks }
       </div>
 
@@ -75,10 +75,10 @@ export default (props) => {
         </div>
       </div>
 
-      <p className='blue flex-center credits'>
+      <p className='blue credits'>
         Powered with 💗 by&nbsp;<a className='blue bold' href='https://github.com'>GitHub</a>.
         All rights reserved &copy; 2019.
-        Designed and developed by&nbsp;<b>José Quintero</b>
+        Designed and developed by&nbsp;<span className='bold'>José Quintero</span>
       </p>
     </footer>
   )
