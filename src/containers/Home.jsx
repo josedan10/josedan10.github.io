@@ -53,7 +53,7 @@ export default (props) => {
       }/>
 
       <h1 className='text-code'>
-        <Typist startDelay={1000}>{ text }</Typist>
+        {window.innerWidth < 768 ? <span data-aos='fade-up'>{text}</span> : <Typist startDelay={1000}>{ text }</Typist>}
       </h1>
       <a
         data-scroll
