@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/semicolon.d565d3f7.svg"
   },
   {
-    "revision": "10058a13c5d35e57657b",
+    "revision": "652514ccd6bd326cee7b",
     "url": "/static/css/main.34a57956.chunk.css"
   },
   {
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/lens.7bdc35e0.svg"
   },
   {
-    "revision": "10058a13c5d35e57657b",
-    "url": "/static/js/main.7bfe9573.chunk.js"
+    "revision": "652514ccd6bd326cee7b",
+    "url": "/static/js/main.7c74874a.chunk.js"
   },
   {
     "revision": "27f6a045e275d15d207ffe6660f5e50d",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/static/css/2.8aec6d06.chunk.css"
   },
   {
-    "revision": "1f60fc209269894adc1eaaddae9af7b9",
+    "revision": "f61d7e10b720d94897bebc620f576a76",
     "url": "/index.html"
   }
 ];
