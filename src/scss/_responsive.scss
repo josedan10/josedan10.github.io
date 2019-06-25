@@ -128,6 +128,11 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 576px) {
+  header {
+    nav {
+      padding: 2rem 1rem;
+    }
+  }
   .container {
     padding: 1rem;
   }
@@ -143,15 +148,16 @@
   header {
     nav {
       .nav-link {
-        font-size: 1rem;
+        font-size: .98rem;
         margin: 2px;
       }
 
       &.open {
         .menuArray {
-          width: 90%;
+          width: 100%;
         }
       }
+      max-width: 100vw;
     }
   }
 }
